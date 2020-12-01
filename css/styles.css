@@ -1,12 +1,161 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Raleway:wght@300&display=swap');
+/* Global styles */
 html, 
 body {
-    background-color: black;
-    font-family: "Abril Fatface", cursive;
+    background-color: whitesmoke;
+    font-family: 'Raleway', sans-serif;
 }
+
+a { 
+    color: white;
+}
+
+
+i { 
+    color: whitesmoke;
+}
+
+a:hover{ 
+    color: whitesmoke;
+    text-decoration: whitesmoke;
+}
+
+h1,h2,h3{
+    font-family: 'Cinzel', serif;
+}
+
+/* Global styles end */
+
+
 /* Navigation Bar */
 
+.background-img {
+    background-image: url("/images/mainHeaderPic.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.navbar-brand {
+    font-family: 'Cinzel' , serif;
+}
+
+.navbar {
+    background-color: rgba(54, 30, 24, 0.6);
+}
+
+.nav-item {
+    padding: 0.8rem 2rem;
+}
+
+.nav-item a {
+    font-family: 'Cinzel', serif;
+}
+
+.oval {
+    width: 60%;
+    height: auto;
+    background: rgb(75, 56, 50, 75%);
+    border-radius: 50%;
+    padding: 10% 0;
+}
+
+.site-name {
+    color:#fff4e6;
+    
+}
+
+.site-name h1 {
+    font-size: 3rem;
+    font-family: 'Cinzel', cursive;
+}
+
+.site-name p {
+    font-size: 1.3rem;
+    font-weight: lighter;
+}
+/* Navigation Bar end */
+
+
+
+/* Three-column-section */
+.model {
+    padding: 1rem;
+}
+
+.check-icon {
+    width: 20%;
+}
+
+.model-header h2{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+}
+
+.model-details{
+    width: 80%;
+}
+
+.model img {
+    max-width: 70%;
+    height: auto;
+}
+
+/* Three-column-section end */
+
+
+/* Photos section */
+
+#photos_section {
+    background-image: url('/images/stage.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.photos-section {
+    background-color: rgba(61, 42, 42, 0.89);
+    
+}
+.photos-header {
+    color: whitesmoke;
+    font-family: 'Raleway', sans-serif;
+}
+/* Photos section end */
+
+/* Contact form section */
+
+.contact-submit-btn {
+    background-color:  rgb(114, 66, 66);
+    color: whitesmoke;
+}
+/* Contact form section end */
+
+
+/* footer section */
+
+.site-footer {
+    background-color: rgb(114, 66, 66);
+    color:white;
+}
+
+.footer-navigation a {
+    margin-right: 3rem;
+    color: white;
+}
+
+.footer-nav-item {
+    margin-right: 3rem;
+}
+
+.white-line {
+    height: 0.02rem;
+    width: 40%;
+    background-color: white;
+}
+
+
+/* footer end */
 /* Welcome Section */
 
 /*

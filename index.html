@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/styles.css">
 
@@ -14,83 +13,104 @@
 <body>
 
 <!--Navigation Bar-->
+<div class="container-fluid px-0">
+    <div class="background-img d-flex flex-column">
+        <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand" href="#">Intermezzo Studios</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa fa-bars fa-2x navbar-toggler-icon"></i>
+            </button>
+        
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item border-right">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item border-right">
+                        <a class="nav-link" href="events.html">Events</a>
+                    </li>
+                    <li class="nav-item border-right">
+                        <a class="nav-link" href="faq.html">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-    <a class="navbar-brand" href="#">Intermezzo Studios</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbar">
-        <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-                <a class="nav-link" href="about.html">About</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="events.html">Events</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="faq.html">FAQ</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact</a>
-            </li>
-        </ul>
-    </div>
-</nav>
-
-<!--Page Title Welcome Section-->
-
-<div class="jumbotron jumbotron-fluid text-center">
-    <div class="intro">
-        <img class="img-fluid" src="images/stage.jpg" alt="Stage with instruments" />
-        <h1>Intermezzo Studios</h1>
-        <p>Where music education, performance, and collaboration meet.</p>
+        <div class="site-name flex-grow-1 d-flex align-items-center">
+            <div class="oval mx-auto text-center">
+                <h1 >Intermezzo Studios</h1>
+                <p class="d-none d-md-block">Where music education, performance and collaboration meet</p>
+            </div> 
+        </div>
     </div>
 </div>
 
 <!--Three-Column Section-->
-
-<div class="container">
-    <div class="row">
-        <div class="col-8">
-            <h3 class="display-4">Our Model</h3>
+<div class="container text-center py-5">
+    <div class="row text-center py-4">
+        <div class="col-8 mx-auto ml-auto">
+            <h2 class="display-4">Our Model</h2>
             <p>We strive to create a thriving musical community by providing everything necessary for musicians to thrive, grow, and connect with other artists.</p>
         </div>
     </div>
-    <div class="row">
-        <div class="col-4">
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">Educate</h5>
-                    <p class="card-text">We provide lessons for a wide variety of instruments and vocal styles, for students of all ages.</p>
+    <div class="row py-4">
+        <div class="model col col-md-4 text-center d-flex">
+            <div class="check-icon d-flex align-items-center">
+                <img class="mx-auto d-none d-md-block" src="/icons/icon1.png" alt="">
+            </div>
+            <div class="model-details">
+                <div class="model-header">
+                    <h2>Educate</h2>
+                </div>
+                <div class="model-description">
+                    <p>
+                        We provide lessons for a wide variety of instruments and vocal styles, for students of all ages.
+                    </p>          
                 </div>
             </div>
         </div>
-        <div class="col-4">
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">Perform</h5>
-                    <p class="card-text">Performance opportunities at Intermezzo are in abundance! Students may participate in recitals or create their own musical solo or collaborative events.</p>
+        <div class="model col-sm-12 col-md-4 text-center d-flex">
+            <div class="check-icon d-flex align-items-center">
+                <img class="mx-auto d-none d-md-block" src="/icons/icon1.png" alt="">
+            </div>
+            <div class="model-details">
+                <div class="model-header">
+                    <h2>Perform</h2>
+                </div>
+                <div class="model-description">
+                    <p>
+                        Performance opportunities at Intermezzo are in abundance! Students may participate in recitals or create their own musical solo or collaborative events.
+                    </p>          
                 </div>
             </div>
         </div>
-        <div class="col-4">
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">Collaborate</h5>
-                    <p class="card-text">Not only do we strive to create a collaborative musical community within the studio, we connect musicians with opportunities to network with other local artists.</p>
+        <div class="model col col-md-4 text-center d-flex">
+            <div class="check-icon d-flex align-items-center">
+                <img class="mx-auto d-none d-md-block" src="/icons/icon1.png" alt="">
+            </div>
+            <div class="model-details">
+                <div class="model-header">
+                    <h2>Collaborate</h2>
+                </div>
+                <div class="model-description">
+                    <p>
+                        Not only do we strive to create a collaborative musical community within the studio, we connect musicians with opportunities to network with other local artists.
+                    </p>          
                 </div>
             </div>
         </div>
     </div>
     <hr/>
+</div>
 
 <!--Photos-->
-
-    <div class="row">
-        <div class="col-8">
-            <h3 class="display-4">Our Space</h3>
+<div class="container-fluid" id="photos_section">
+    <div class="row text-center photos-section py-5">
+        <div class="col-8 mx-auto">
+            <h3 class="display-4 photos-header">Our Space</h3>
             <div id="carouselSlides" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
                     <li data-target="#carouselSlides" data-slide-to="0" class="active"></li>
@@ -131,15 +151,17 @@
             </div>
         </div>
     </div>
+</div>
+  
     <hr/>
 <!--Contact Form-->
-
-    <div class="row">
-        <div class="col-12">
-            <h2>Contact Us</h2>
+<div class="container-fluid">
+    <div class="contact-us-section">
+        <div class="row">
+            <h2 class="mx-auto">Contact Us</h2>
         </div>
-        <div class="col">
-            <form>
+        <div class="row">
+            <form class="col-6 mx-auto">
                 <div class="form-group">
                     <label for="firstName">First Name: </label>
                     <input type="text" class="form-control" id="firstName">
@@ -174,31 +196,27 @@
                 <div class="form-group">
                     <textarea class="form-control" id="textarea" rows="3" placeholder="Questions and comments here"></textarea>
                 </div>
-                <button type="submit" class="btn btn-secondary">Submit</button>
+                <button type="submit" class="btn contact-submit-btn">Submit</button>
             </form>
         </div>
     </div>
 </div>
+
 <hr/>
 
 <!--Footer-->
-
-<footer>
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <ul>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="events.html">Events</a></li>
-                    <li><a href="faq.html">FAQ</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </div>
-            <hr/>
-            <div class="col-12">
-                <h6>1234 Somewhere Street, Dreamland, USA</h6>
-                <h6>&#169; Intermezzo Studios, LLC</h6>
-            </div>
+<footer class="site-footer">
+    <div class="container-fluid">
+        <div class="footer-navigation text-center py-4">
+            <a class="footer-nav-item" href="about.html">About</a>
+            <a class="footer-nav-item" href="events.html">Events</a>
+            <a class="footer-nav-item" href="faq.html">FAQ</a>
+            <a class="footer-nav-item" href="contact.html">Contact</a>
+        </div>
+        <div class="white-line mx-auto">
+        </div>
+        <div class="address text-center py-4">
+            <p class="m-0">1234 Somewhere Street, Dreamland, USA </br> <b style="font-family: sans-serif;"> &copy; Intermezzo Studio , LLC</b> </p>
         </div>
     </div>
 </footer>
