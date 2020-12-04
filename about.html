@@ -16,35 +16,35 @@
 <!--Navigation Bar-->
 
 <header>
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="index.html">Intermezzo Studios</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbar">
-        <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-                <a class="nav-link active" href="about.html">About</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="events.html">Events</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="faq.html">FAQ</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact</a>
-            </li>
-        </ul>
-    </div>
-</nav>
+    <nav class="navbar navbar-expand-lg" id="my_nav">
+        <a class="navbar-brand" href="index.html">Intermezzo Studios</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa fa-bars fa-2x navbar-toggler-icon"></i>
+        </button>
+    
+        <div class="collapse navbar-collapse" id="navbar">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item border-right">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item border-right">
+                    <a class="nav-link" href="events.html">Events</a>
+                </li>
+                <li class="nav-item border-right">
+                    <a class="nav-link" href="faq.html">FAQ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 </header>
 
 <!--Breadcrumbs-->
 
 <div class="container">
-    <div class="row">
+    <div class="row about-breadcrumb">
         <div class="col my-auto">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="index.html">Home</a></li>
@@ -56,8 +56,8 @@
 
 <!--Link Menu-->
 
-<div class="container">
-    <div class="row">
+<div class="container about-section py-4">
+    <div class="row about-link-menu">
         <div class="col-4">
             <ul class="nav flex-column">
                 <li class="nav-item">
@@ -90,31 +90,33 @@
 
 <!--Footer-->
 
-<footer>
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <ul>
-                    <li><a href="#">About</a></li>
-                    <li><a href="events.html">Events</a></li>
-                    <li><a href="faq.html">FAQ</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </div>
-            <hr/>
-            <div class="col-12">
-                <h6>1234 Somewhere Street, Dreamland, USA</h6>
-                <h6>&#169; Intermezzo Studios, LLC</h6>
-            </div>
+<footer class="site-footer">
+    <div class="container-fluid">
+        <div class="footer-navigation text-center py-4">
+            <a class="footer-nav-item" href="about.html">About</a>
+            <a class="footer-nav-item" href="events.html">Events</a>
+            <a class="footer-nav-item" href="faq.html">FAQ</a>
+            <a class="footer-nav-item" href="contact.html">Contact</a>
+        </div>
+        <div class="white-line mx-auto">
+        </div>
+        <div class="address text-center py-4">
+            <p class="m-0">1234 Somewhere Street, Dreamland, USA </br> <b style="font-family: sans-serif;"> &copy; Intermezzo Studio , LLC</b> </p>
         </div>
     </div>
 </footer>
-
 <!--Scripts-->
 
 <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
 <script src="node_modules/popper.js/dist/popper.min.js"></script>
 <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script>    
+    // This script changes every navbar bg-color, except index.html's navbar.
+    // Because index.html navbar bg-color needs opacity to blend with header image 
 
+    $('document').ready(function(){
+        $(".navbar").css("background-color", "rgb(63, 41, 36,90%)");
+    });
+</script>
 </body>
 </html>

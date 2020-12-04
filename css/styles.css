@@ -158,4 +158,55 @@ h1,h2,h3{
 /* footer end */
 
 
+/* ---------- ABOUT.HTML ---------- */
+
+
+/* Breacrumb */
+.breadcrumb a{
+    color: rgb(114, 66, 66);
+}
+/*  */
+
+/* Link menu */
+.about-section {
+    height: 80vh;
+}
+
+.about-link-menu a{
+    color:rgb(114, 66, 66);
+    font-size: 1.3rem;
+    border-bottom: 0.1rem solid rgb(194, 190, 190);
+}
+
+.about-link-menu li:hover {
+    background-color: lightgrey;
+}
+/* Link menu end */
+
+
+/* ---------- EVENTS.HTML ---------- */
+
+
+/* Calendar */
+
+
+.calendar-table tr a{
+    color: rgb(32, 30, 30);
+
+}
+
+/* ---------- FAQ.HTML ---------- */
+
+#faqAccordion {
+    height: 70vh;
+}
+
+#faqAccordion .btn-link {
+    color: rgb(37, 34, 34);
+}
+
+
+/* ---------- CONTACT.HTML ---------- */
+
+
 
